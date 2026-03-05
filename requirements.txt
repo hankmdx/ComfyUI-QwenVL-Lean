@@ -1,0 +1,5 @@
+# Documentation only — all deps already in the Docker image.
+llama-cpp-python>=0.3.0
+Pillow>=9.0.0
+numpy>=1.24.0
+huggingface_hub>=0.20.0

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+prompt_cache.json
+Dockerfile
+docker-compose.yml
+.env
