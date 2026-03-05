@@ -27,7 +27,7 @@
       "model_files": [
         "Qwen3-VL-8B-Instruct-c_abliterated-v3.Q4_K_M.gguf",
         "Qwen3-VL-8B-Instruct-c_abliterated-v3.Q8_0.gguf",
-        "Qwen3-VL-8B-Instruct-c_abliterated-v3-F16.gguf"
+        "Qwen3-VL-8B-Instruct-c_abliterated-v3.f16.gguf"
       ],
       "defaults": {
         "context_length": 32768,
