@@ -4,3 +4,4 @@ prompt_cache.json
 Dockerfile
 docker-compose.yml
 .env
+models/
