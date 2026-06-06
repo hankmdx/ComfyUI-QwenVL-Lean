@@ -526,7 +526,7 @@ class QwenVLGGUFBase:
 
         image_hash = get_image_hash(image)
         video_hash = get_video_hash(video)
-        cache_key = get_cache_key(model_name, preset_prompt, custom_prompt, image_hash, video_hash, int(seed))
+        cache_key = get_cache_key(model_name, preset_prompt, custom_prompt, image_hash, video_hash, int(seed), int(max_tokens))
 
         if cache_key in PROMPT_CACHE:
             cached_text = PROMPT_CACHE[cache_key].get("text", "")

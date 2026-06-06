@@ -32,7 +32,7 @@ def save_cache():
         print(f"[QwenVL-Lean] Failed to save prompt cache: {e}")
 
 
-def get_cache_key(model_name, preset_prompt, custom_prompt, image_hash=None, video_hash=None, seed=None):
+def get_cache_key(model_name, preset_prompt, custom_prompt, image_hash=None, video_hash=None, seed=None, max_tokens=None):
     key_data = {
         "model": model_name,
         "preset": preset_prompt,
@@ -40,6 +40,7 @@ def get_cache_key(model_name, preset_prompt, custom_prompt, image_hash=None, vid
         "image": image_hash,
         "video": video_hash,
         "seed": seed,
+        "max_tokens": max_tokens,
     }
     key_str = json.dumps(key_data, sort_keys=True)
     return hashlib.md5(key_str.encode()).hexdigest()
